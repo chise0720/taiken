@@ -3,350 +3,491 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>自分に合う、痩せる食の設計。3日間体験｜痩せ舌設計士ちせ</title>
+<title>体型カバーの服、卒業しませんか？3日間無料体験｜痩せ舌設計士ちせ</title>
 <style>
   :root{
-    --bg:#faf5ec;
-    --card:#fffdf9;
-    --ink:#5b5043;
-    --ink-soft:#857a6b;
-    --accent:#b29466;
-    --accent-soft:#cdb792;
-    --line:#ece2d2;
+    --bg:#f9f7f2;
+    --card:#ffffff;
+    --ink:#3a3028;
+    --ink-soft:#6b5f52;
+    --accent:#7aaa8a;
+    --accent-dark:#5a9070;
+    --accent-soft:#d6ead9;
+    --line:#e8e0d4;
+    --beige:#f3ede3;
+    --beige-dark:#e8dece;
     --gold:#a9885a;
-    --tag-bg:#f1e8d8;
-    --green:#7fa98a;
-    --green-soft:#e6f0e6;
-    --pink:#d39aa6;
-    --pink-soft:#f7e8ec;
+    --tag-bg:#eef5ef;
+    --pink:#e8a0ad;
+    --pink-soft:#fdf0f2;
+    --line-green:#06c755;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   body{
     font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
     background:var(--bg);
     color:var(--ink);
-    line-height:1.9;
+    line-height:2.0;
     font-size:16px;
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
-  section{padding:54px 0;}
+  section{padding:60px 0;}
 
-  /* hero */
+  /* ========= HERO ========= */
   .hero{
-    background:linear-gradient(160deg,#f9f2e4 0%,#f7e8ec 55%,#e6f0e6 100%);
+    background:linear-gradient(160deg,#edf6ef 0%,#f3ede3 60%,#fdf0f2 100%);
     text-align:center;
-    padding:64px 0 58px;
+    padding:72px 0 64px;
   }
   .hero .badge{
     display:inline-block;
-    background:var(--pink);
+    background:var(--accent);
     color:#fff;
     font-size:13px;
-    letter-spacing:.08em;
-    padding:7px 18px;
+    letter-spacing:.1em;
+    padding:7px 20px;
     border-radius:999px;
-    margin-bottom:26px;
+    margin-bottom:28px;
+    font-weight:600;
   }
   .hero h1{
-    font-size:27px;
-    line-height:1.55;
-    font-weight:700;
+    font-size:30px;
+    line-height:1.5;
+    font-weight:800;
     letter-spacing:.02em;
-    margin-bottom:22px;
+    margin-bottom:20px;
+    color:var(--ink);
   }
-  .hero h1 .em{color:var(--accent);}
-  .hero .lead{
-    font-size:15.5px;
+  .hero h1 .em{
+    color:var(--accent-dark);
+    border-bottom:3px solid var(--accent-soft);
+    padding-bottom:2px;
+  }
+  .hero .sub-copy{
+    font-size:16px;
     color:var(--ink-soft);
-    margin-bottom:8px;
+    margin-bottom:32px;
+    line-height:1.8;
+  }
+  .btn-line{
+    display:inline-block;
+    background:var(--line-green);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:17px;
+    padding:18px 36px;
+    border-radius:999px;
+    box-shadow:0 8px 24px rgba(6,199,85,.28);
+    transition:transform .12s ease, box-shadow .12s ease;
+    letter-spacing:.04em;
+  }
+  .btn-line:active{transform:scale(.97);box-shadow:0 4px 12px rgba(6,199,85,.2);}
+  .hero-note{
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-top:16px;
+    line-height:1.7;
   }
   .hero .author{
     font-size:13px;
     color:var(--ink-soft);
-    margin-top:24px;
+    margin-top:30px;
+    opacity:.8;
   }
 
-  /* common */
+  /* ========= SECTION COMMON ========= */
   h2{
-    font-size:21px;
-    line-height:1.6;
+    font-size:22px;
+    line-height:1.55;
     text-align:center;
-    margin-bottom:30px;
-    font-weight:700;
+    margin-bottom:32px;
+    font-weight:800;
+    color:var(--ink);
   }
   h2 .sub{
     display:block;
-    font-size:12.5px;
-    color:var(--gold);
-    letter-spacing:.14em;
-    margin-bottom:8px;
+    font-size:11.5px;
+    color:var(--accent-dark);
+    letter-spacing:.18em;
+    margin-bottom:10px;
     font-weight:600;
   }
 
-  /* check list */
+  /* ========= CHECK LIST ========= */
+  .check-section{background:var(--card);}
   .checks{
-    background:var(--card);
+    background:var(--bg);
     border:1px solid var(--line);
-    border-radius:18px;
-    padding:30px 24px;
+    border-radius:20px;
+    padding:32px 26px;
   }
   .checks li{
     list-style:none;
-    padding:13px 0 13px 34px;
+    padding:14px 0 14px 40px;
     position:relative;
     border-bottom:1px dashed var(--line);
     font-size:15.5px;
+    line-height:1.7;
   }
   .checks li:last-child{border-bottom:none;}
   .checks li::before{
     content:"✓";
-    position:absolute;left:4px;top:13px;
-    color:var(--green);
-    font-weight:700;
+    position:absolute;left:6px;top:14px;
+    color:var(--accent-dark);
+    font-weight:800;
+    font-size:17px;
+  }
+  .lead-block{
+    text-align:center;
+    font-size:15.5px;
+    color:var(--ink-soft);
+    margin-top:26px;
+  }
+  .lead-block strong{color:var(--ink);font-weight:700;}
+
+  /* ========= 常識破壊 ========= */
+  .destroy-section{background:var(--beige);}
+  .destroy-inner{
+    background:var(--card);
+    border-radius:20px;
+    padding:34px 28px;
+    border-left:5px solid var(--accent);
+  }
+  .destroy-inner .catch{
+    font-size:18px;
+    font-weight:800;
+    color:var(--ink);
+    margin-bottom:18px;
+    line-height:1.6;
+  }
+  .destroy-inner p{
+    font-size:15px;
+    color:var(--ink-soft);
+    line-height:1.9;
   }
 
-  /* days */
+  /* ========= BENEFIT ========= */
+  .benefit-cards{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+  .benefit-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:28px 26px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+  }
+  .benefit-card .num-circle{
+    flex-shrink:0;
+    width:42px;height:42px;
+    background:var(--accent);
+    color:#fff;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;font-weight:800;
+    margin-top:2px;
+  }
+  .benefit-card h3{
+    font-size:16.5px;
+    font-weight:700;
+    margin-bottom:8px;
+    color:var(--ink);
+  }
+  .benefit-card p{
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.85;
+  }
+
+  /* ========= DAY ========= */
   .day{
     background:var(--card);
     border:1px solid var(--line);
-    border-radius:18px;
-    padding:26px 24px;
+    border-radius:20px;
+    padding:28px 26px;
     margin-bottom:18px;
-    position:relative;
-    overflow:hidden;
   }
   .day .num{
     display:inline-block;
     font-size:12px;
-    letter-spacing:.12em;
+    letter-spacing:.14em;
     color:#fff;
-    background:var(--accent-soft);
-    padding:4px 14px;
+    background:var(--accent);
+    padding:5px 16px;
     border-radius:999px;
     margin-bottom:14px;
-    font-weight:600;
+    font-weight:700;
   }
   .day h3{
     font-size:18px;
     margin-bottom:10px;
     font-weight:700;
+    color:var(--ink);
   }
   .day p{
     font-size:14.5px;
     color:var(--ink-soft);
+    line-height:1.85;
   }
-
-  /* types */
   .types{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    justify-content:center;
-    margin-top:8px;
+    display:flex;flex-wrap:wrap;
+    gap:8px;justify-content:flex-start;
+    margin-top:14px;
   }
   .types span{
-    font-size:13.5px;
-    padding:8px 15px;
+    font-size:13px;
+    padding:7px 14px;
     border-radius:999px;
     border:1px solid transparent;
   }
-  .t-meta{background:var(--pink-soft);border-color:#eccdd4;color:#b06576;}
+  .t-meta{background:#fdf0f2;border-color:#f0c8d0;color:#b06576;}
   .t-sleep{background:#ece6f3;border-color:#dcd2ea;color:#7d6ba0;}
-  .t-horm{background:var(--tag-bg);border-color:#e3d4b4;color:#9c7c44;}
-  .t-auto{background:var(--green-soft);border-color:#d2e3d2;color:#5e8a6e;}
-  .t-stress{background:#f3ece2;border-color:#e3d6c4;color:#8f7a5e;}
+  .t-horm{background:#fef8ec;border-color:#e8d9b0;color:#9c7c44;}
+  .t-auto{background:var(--tag-bg);border-color:#c8ddc8;color:#4e8060;}
+  .t-stress{background:#f5f0e8;border-color:#e0d4c0;color:#8f7a5e;}
 
-  /* cta */
+  /* ========= CTA BOX ========= */
   .cta-box{
-    background:linear-gradient(160deg,#bda074 0%,#a4855a 100%);
-    border-radius:20px;
-    padding:34px 24px;
+    background:linear-gradient(145deg,#5a9070 0%,#7aaa8a 100%);
+    border-radius:24px;
+    padding:38px 26px;
     text-align:center;
     color:#fff;
   }
-  .cta-box p.k{font-size:16px;margin-bottom:6px;}
-  .cta-box p.s{font-size:13px;opacity:.85;margin-bottom:20px;}
-  .btn{
+  .cta-box p.k{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:8px;
+    text-shadow:0 1px 3px rgba(0,0,0,.15);
+  }
+  .cta-box p.s{
+    font-size:13.5px;
+    opacity:.9;
+    margin-bottom:24px;
+    line-height:1.7;
+  }
+  .cta-box .btn-line{
     display:block;
     background:#fff;
-    color:var(--accent);
-    text-decoration:none;
-    font-weight:700;
-    font-size:17px;
-    padding:17px 20px;
-    border-radius:999px;
-    box-shadow:0 6px 18px rgba(0,0,0,.12);
-    transition:transform .12s ease;
+    color:var(--accent-dark);
+    box-shadow:0 8px 24px rgba(0,0,0,.15);
   }
-  .btn:active{transform:scale(.98);}
-  .btn.line{background:#06c755;color:#fff;}
-  .btn.diag{background:var(--gold);color:#fff;}
-  .note{font-size:12px;opacity:.8;margin-top:14px;}
+  .cta-box .btn-line:active{box-shadow:0 4px 12px rgba(0,0,0,.1);}
   .step{
     font-size:13.5px;
-    margin-top:18px;
-    background:rgba(255,255,255,.13);
-    border-radius:12px;
-    padding:14px 16px;
-    text-align:left;
-  }
-  .step b{color:#ffe7c2;}
-
-  /* flow */
-  .flow{counter-reset:f;}
-  .flow li{
-    list-style:none;
-    background:var(--card);
-    border:1px solid var(--line);
+    margin-top:20px;
+    background:rgba(255,255,255,.15);
     border-radius:14px;
-    padding:18px 20px 18px 56px;
-    margin-bottom:12px;
-    position:relative;
-    font-size:14.5px;
-  }
-  .flow li::before{
-    counter-increment:f;
-    content:counter(f);
-    position:absolute;left:16px;top:16px;
-    width:26px;height:26px;
-    background:var(--accent);
-    color:#fff;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;
-    font-size:13px;font-weight:700;
-  }
-
-  /* faq */
-  .faq details{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:14px;
-    margin-bottom:12px;
-    padding:4px 4px;
-  }
-  .faq summary{
-    cursor:pointer;
     padding:16px 18px;
-    font-weight:600;
-    font-size:15px;
-    list-style:none;
-    position:relative;
+    text-align:left;
+    line-height:1.9;
   }
-  .faq summary::-webkit-details-marker{display:none;}
-  .faq summary::after{
-    content:"＋";
-    position:absolute;right:18px;top:16px;
-    color:var(--accent);
-  }
-  .faq details[open] summary::after{content:"−";}
-  .faq .ans{
-    padding:0 18px 16px;
-    font-size:14px;
-    color:var(--ink-soft);
-  }
+  .step b{color:#d6f5e0;}
+  .note{font-size:12px;opacity:.8;margin-top:14px;line-height:1.7;}
 
-  /* reassure */
-  .reassure{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-top:8px;
-  }
-  .reassure span{
-    background:var(--tag-bg);
-    border:1px solid var(--line);
-    border-radius:999px;
-    padding:8px 16px;
-    font-size:13px;
-    color:var(--ink);
-  }
-
-  /* author */
+  /* ========= PROFILE ========= */
+  .profile-section{background:var(--beige);}
   .author-box{
     background:var(--card);
     border:1px solid var(--line);
-    border-radius:18px;
-    padding:28px 24px;
+    border-radius:20px;
+    padding:32px 26px;
   }
-  .author-box h3{font-size:17px;margin-bottom:12px;}
-  .author-box p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
+  .author-box .name{
+    font-size:17px;font-weight:700;
+    margin-bottom:6px;color:var(--ink);
+  }
+  .author-box .title-label{
+    display:inline-block;
+    font-size:12px;
+    background:var(--tag-bg);
+    color:var(--accent-dark);
+    border-radius:999px;
+    padding:4px 14px;
+    margin-bottom:18px;
+    font-weight:600;
+  }
+  .author-box p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin-bottom:12px;
+    line-height:1.9;
+  }
   .sns-link{
     display:inline-block;
     margin-top:6px;
     font-size:13.5px;
-    color:var(--accent);
+    color:var(--accent-dark);
     text-decoration:none;
     font-weight:600;
     border-bottom:1px solid var(--accent-soft);
     padding-bottom:2px;
   }
 
+  /* ========= FAQ ========= */
+  .faq details{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    margin-bottom:12px;
+  }
+  .faq summary{
+    cursor:pointer;
+    padding:18px 20px;
+    font-weight:600;
+    font-size:15px;
+    list-style:none;
+    position:relative;
+    color:var(--ink);
+    line-height:1.6;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{
+    content:"＋";
+    position:absolute;right:18px;top:50%;transform:translateY(-50%);
+    color:var(--accent-dark);
+    font-size:18px;
+  }
+  .faq details[open] summary::after{content:"−";}
+  .faq .ans{
+    padding:0 20px 18px;
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.85;
+  }
+
+  /* ========= REASSURE ========= */
+  .reassure{
+    display:flex;gap:8px;flex-wrap:wrap;
+    justify-content:center;margin-bottom:28px;
+  }
+  .reassure span{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:8px 18px;
+    font-size:13px;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+
+  /* ========= FINAL CTA ========= */
+  .final-section{background:var(--beige);}
+  .final-copy{
+    text-align:center;
+    font-size:22px;
+    font-weight:800;
+    color:var(--ink);
+    margin-bottom:28px;
+    line-height:1.5;
+  }
+  .ps-block{
+    background:var(--card);
+    border-left:4px solid var(--accent);
+    border-radius:0 14px 14px 0;
+    padding:20px 22px;
+    margin-top:28px;
+    font-size:14px;
+    color:var(--ink-soft);
+    line-height:1.9;
+  }
+  .ps-block strong{color:var(--ink);font-weight:700;}
+
   footer{
     text-align:center;
     padding:36px 20px;
     font-size:12px;
     color:var(--ink-soft);
+    background:var(--card);
+    border-top:1px solid var(--line);
   }
   footer a{color:var(--ink-soft);}
-
-  .lead-block{text-align:center;font-size:15.5px;color:var(--ink-soft);}
-  .lead-block strong{color:var(--ink);font-weight:700;}
+  footer p+p{margin-top:8px;}
 </style>
 </head>
 <body>
 
-<!-- HERO -->
-<div class="hero">
+<!-- ① HERO -->
+<header class="hero">
   <div class="wrap">
     <span class="badge">公式LINE 3日間 無料体験</span>
-    <h1>自分に合う、<br><span class="em">痩せる食の設計</span>。<br>3日間体験</h1>
-    <p class="lead">ダイエットの前に、<br>あなたが痩せない理由を<br>3日間で一緒に見つけます。</p>
-    <p class="lead" style="margin-top:14px;">知識を増やす前に、<br>あなたの生活に合う「食の設計」の<br>土台を作る3日間です。</p>
+    <h1><span class="em">体型カバーの服</span>、<br>卒業しませんか？</h1>
+    <p class="sub-copy">あなたの生活スタイルに合う<br>痩せ方を考える3日間</p>
+    <a class="btn-line" href="https://lin.ee/S6B7yic">3日間無料体験をはじめる</a>
+    <p class="hero-note">公式LINE登録後に「参加」と入力してね🌿<br>自動課金なし・いつでも解除OK</p>
     <p class="author">痩せ舌設計士ちせ｜食育アドバイザー</p>
   </div>
-</div>
+</header>
 
-<!-- 悩み -->
-<section>
+<!-- ② 共感と問題提起 -->
+<section class="check-section">
   <div class="wrap">
     <h2><span class="sub">CHECK</span>こんなこと、ありませんか？</h2>
     <ul class="checks">
-      <li>食べる量は減らしてるのに、体重が変わらない</li>
-      <li>体は細いのに、お腹だけ出てきた</li>
-      <li>夕方になると甘いもの・濃い味が欲しくなる</li>
-      <li>何から始めればいいのか、わからない</li>
-      <li>自分に合う方法が、まだ見つかっていない</li>
+      <li>ユニクロのXLサイズを、鏡も見ずにカゴに入れる</li>
+      <li>クローゼットは「入る服」だけの場所になっている</li>
+      <li>「もう歳だから」と諦めたフリをして、本当はまだ諦めきれない</li>
+      <li>痩せたい気持ちはあるけどねえ。食べる量減らしてもなぜか太る</li>
     </ul>
-    <p class="lead-block" style="margin-top:22px;">一つでも当てはまったら、<br><strong>やってることが、ちょっとズレてるだけ。</strong></p>
+    <p class="lead-block">一つでも当てはまったら、<br><strong>あなたのせいじゃない。やり方がズレてるだけ。</strong></p>
   </div>
 </section>
 
-<!-- なぜ3日 -->
-<section style="background:#f3ece0;">
+<!-- ③ 常識破壊と解決策の提示 -->
+<section class="destroy-section">
   <div class="wrap">
-    <h2><span class="sub">WHY 3 DAYS</span>40代が痩せない、共通の入り口</h2>
-    <p class="lead-block" style="text-align:left;">
-      40代が痩せない共通の入り口は、筋肉が静かに落ちてること。<br>
-      20代と比べて、40代の筋肉量は平均で約8%減るというデータがある。<br>
-      筋肉は脂肪より多くカロリーを使う組織だから、落ちるほど代謝が下がる。<br>
-      「細いのにお腹だけ出る」「食べてないのに痩せない」は、ここから始まる。<br><br>
-      でも、その引き金は人によって違う。<br>
-      だから人の真似をしてもハマらない。<br>
-      <strong>まずは、自分のタイプを知るところから。それを3日でやる。</strong>
-    </p>
+    <div class="destroy-inner">
+      <p class="catch">それ、根性がないわけでも<br>食い意地が張っているからでもありません。</p>
+      <p>世の中のダイエット情報の９０％が、40代のあなたを「デブのまま」にさせる情報です。「痩せない正体」を知らないまま努力しても、火に油を注ぐようなもの。<br><br>正しい努力の前に、まず「なぜ痩せないか」を知る必要があります。</p>
+    </div>
   </div>
 </section>
 
-<!-- 3日間の中身 -->
+<!-- ④ ベネフィット -->
 <section>
+  <div class="wrap">
+    <h2><span class="sub">BENEFIT</span>3日間で手に入る未来</h2>
+    <div class="benefit-cards">
+      <div class="benefit-card">
+        <div class="num-circle">1</div>
+        <div>
+          <h3>「痩せない正体」が暴かれる</h3>
+          <p>20問の診断で、あなたの体がなぜ痩せることを拒んでいるのか明確になります。知らないままでいると、何年努力しても同じ壁にぶつかり続けます。</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="num-circle">2</div>
+        <div>
+          <h3>「最初の一手（処方箋）」が手に入る</h3>
+          <p>あれもこれもやる必要はありません。あなたのタイプに合う「これだけやればいい」一個を設計します。ズレた努力をやめて、正しい一手に集中できます。</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="num-circle">3</div>
+        <div>
+          <h3>続けると体に変化が起こる理由がわかる</h3>
+          <p>あなたの現在の状態を正確に知ることで、これから何が変わるかが見えてきます。根性でも我慢でもなく、仕組みで痩せる土台が整います。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 3日間のステップ -->
+<section style="background:var(--beige);">
   <div class="wrap">
     <h2><span class="sub">PROGRAM</span>3日間で、やること</h2>
 
     <div class="day">
       <span class="num">DAY 1</span>
-      <h3>痩せない理由（タイプ）を知る</h3>
-      <p>無料診断で、あなたの「痩せない理由」が5つのどのタイプかを見極める。ここがズレてると、何をやっても続かない。</p>
+      <h3>痩せない理由（正体）を特定する</h3>
+      <p>20問の診断で、5つのタイプのどれかを見極めます。ここがズレてると、何をやっても続かない。まず「自分の正体」を知ることからはじめます。</p>
       <div class="types">
         <span class="t-meta">代謝低下型</span>
         <span class="t-sleep">睡眠不足型</span>
@@ -358,139 +499,110 @@
 
     <div class="day">
       <span class="num">DAY 2</span>
-      <h3>あなたのタイプに合う「最初の一手」</h3>
-      <p>タイプによって、今日やる一手は変わる。あなたに合う一個だけをLINEで渡す。あれもこれもやらなくていい。</p>
+      <h3>あなたのタイプ専用の「処方箋」</h3>
+      <p>タイプによって、やるべきことは180度変わります。あなただけの「最初の一手」をLINEでお渡しします。あれもこれもやらなくていい。一個だけに集中します。</p>
     </div>
 
     <div class="day">
       <span class="num">DAY 3</span>
-      <h3>食の設計を、続く形にする</h3>
-      <p>味付けの設計で、薄味でも満足できる土台を作る。我慢でも根性でもなく、毎日の食べ方に落とし込む。</p>
+      <h3>まとめで振り返り</h3>
+      <p>毎日の食べ方、心の持ち方を見直します。「なぜ続けると体が変わるのか」を腑に落とすことで、正しい努力が自然と続く仕組みを作ります。</p>
     </div>
   </div>
 </section>
 
-<!-- CTA 1 -->
+<!-- CTA 中間 -->
 <section>
   <div class="wrap">
     <div class="cta-box">
       <p class="k">まずは、公式LINEで3日間を受け取る</p>
       <p class="s">登録は無料。受け取ったら、Day1の診断からスタート。</p>
-      <a class="btn line" href="https://lin.ee/S6B7yic">LINEで無料体験を受け取る</a>
+      <a class="btn-line" href="https://lin.ee/S6B7yic">3日間無料体験をはじめる</a>
       <div class="step">
         受け取り方は、かんたん2ステップ。<br>
         <b>① 公式LINEを追加</b><br>
-        <b>② トークに「体験」と送る</b><br>
+        <b>② トークに「参加」と送る</b><br>
         → 3日間の体験がはじまります。
       </div>
-      <p class="note">登録不要のしつこい勧誘なし／いつでもブロックでやめられます</p>
+      <p class="note">自動課金なし・しつこい勧誘なし<br>いつでもブロックでやめられます</p>
     </div>
   </div>
 </section>
 
-<!-- 診断 -->
-<section style="background:var(--green-soft);">
-  <div class="wrap">
-    <h2><span class="sub">DAY 1 / 診断</span>先に、診断だけ試したい人へ</h2>
-    <p class="lead-block">
-      あなたの「痩せない理由」が、5つのどのタイプかがわかる無料診断。<br>
-      質問は35問。約6分で、あなたのタイプが具体的にわかる。<br>
-      <strong>登録不要・個人情報の入力なし。</strong>
-    </p>
-    <div style="margin-top:24px;">
-      <a class="btn diag" href="https://chise0720.github.io/hyoushi2/">無料で診断をはじめる</a>
-    </div>
-    <p class="lead-block" style="margin-top:18px;font-size:13px;">
-      ※結果はあくまで目安で、医療行為ではありません。<br>食生活を見直すきっかけに使ってください。
-    </p>
-  </div>
-</section>
-
-<!-- 流れ -->
-<section>
-  <div class="wrap">
-    <h2><span class="sub">FLOW</span>3日間の流れ</h2>
-    <ul class="flow">
-      <li>公式LINEを追加して「体験」と送る</li>
-      <li>Day1：診断で、自分の痩せないタイプを知る</li>
-      <li>Day2：タイプに合う「最初の一手」を受け取る</li>
-      <li>Day3：食の設計を、続けられる形にする</li>
-      <li>もっと深めたい人は、そのまま個別相談へ</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 著者 -->
-<section style="background:#f3ece0;">
+<!-- ⑥ プロフィール -->
+<section class="profile-section">
   <div class="wrap">
     <h2><span class="sub">ABOUT</span>設計するのは、こんな人</h2>
     <div class="author-box">
-      <h3>痩せ舌設計士ちせ｜食育アドバイザー</h3>
-      <p>40代で婦人科系の手術・ホットフラッシュ・体重の変化を通ってきた当事者。</p>
-      <p>食育アドバイザーとして、我慢ゼロで食べて痩せる「食の設計」を組み立ててる。</p>
-      <p>濃い味を減らすだけ、量を減らすだけのダイエットで、うまくいかなかった人へ。痩せない理由は、人によって違う。だから、あなたに合う設計を一緒に探したい。</p>
-      <a class="sns-link" href="https://www.threads.com/@chise.daiyo.cook" target="_blank" rel="noopener">Threadsで毎日の「食の設計」を発信中　@chise.daiyo.cook →</a>
+      <p class="name">ちせ</p>
+      <span class="title-label">痩せ舌設計士｜食育アドバイザー</span>
+      <p>私自身、40歳で何をやっても痩せない絶望を味わいました。ドラム缶体型を隠し、鏡を見るのが嫌でたまらなかった日々。</p>
+      <p>でも、「食の設計」に出会い、食育アドバイザー資格をとって人生が変わりました。婦人科系の手術・ホットフラッシュも経験した当事者だからこそ、40代の体の変化をリアルに分かっています。</p>
+      <p>あなたがダイエットで「無駄に使った時間」を、ここから「最高の自己投資」に変えるお手伝いをさせてください。</p>
+      <a class="sns-link" href="https://www.threads.com/@chise.daiyo.cook" target="_blank" rel="noopener">Threadsで毎日発信中　@chise.daiyo.cook →</a>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- ⑦ FAQ -->
 <section>
   <div class="wrap">
     <h2><span class="sub">FAQ</span>よくある質問</h2>
     <div class="faq">
       <details>
         <summary>本当に無料ですか？</summary>
-        <div class="ans">はい、3日間の体験は無料です。診断も無料で受けられます。</div>
+        <div class="ans">はい、3日間の体験はすべて無料です。隠れた費用は一切ありません。</div>
       </details>
       <details>
-        <summary>勝手に課金されたりしませんか？</summary>
+        <summary>自動課金されませんか？</summary>
         <div class="ans">自動課金は一切ありません。受け取れるのは無料の体験コンテンツだけです。</div>
       </details>
       <details>
-        <summary>しつこい勧誘がきませんか？</summary>
-        <div class="ans">しつこい勧誘はしません。合わないと感じたら、いつでもブロックでやめられます。</div>
+        <summary>勧誘はありますか？</summary>
+        <div class="ans">しつこい勧誘は一切しません。合わないと感じたら即ブロックで終了です。それで何も問題ありません。</div>
       </details>
       <details>
         <summary>ダイエット初心者でも大丈夫ですか？</summary>
-        <div class="ans">大丈夫です。何から始めればいいかわからない人のための3日間です。まず自分のタイプを知るところから始めます。</div>
+        <div class="ans">大丈夫です。むしろ「何から始めればいいかわからない」という方のための3日間です。まず自分のタイプを知るところから始めます。</div>
       </details>
       <details>
-        <summary>きつい食事制限や運動がありますか？</summary>
-        <div class="ans">ありません。減らす・我慢するではなく、毎日の食べ方を設計し直す内容です。</div>
-      </details>
-      <details>
-        <summary>診断だけ受けてもいいですか？</summary>
-        <div class="ans">もちろんです。上の「無料で診断をはじめる」から、登録なしで試せます。</div>
+        <summary>きつい食事制限や運動はありますか？</summary>
+        <div class="ans">ありません。減らす・我慢するのではなく、あなたの生活スタイルに合う「食の設計」を見直す内容です。</div>
       </details>
     </div>
   </div>
 </section>
 
-<!-- 不安消し＋最終CTA -->
-<section style="background:var(--pink-soft);">
+<!-- ⑧ 最終CTA -->
+<section class="final-section">
   <div class="wrap">
+    <p class="final-copy">今日でダイエットを、<br>終わらせませんか？</p>
     <div class="reassure">
       <span>無料</span>
-      <span>登録なしで診断OK</span>
       <span>自動課金なし</span>
-      <span>いつでもやめられる</span>
-      <span>しつこい勧誘なし</span>
+      <span>いつでやめられる</span>
+      <span>勧誘なし</span>
     </div>
-    <div class="cta-box" style="margin-top:24px;">
+    <div class="cta-box">
       <p class="k">3日間で、あなたの「食の設計」をはじめる</p>
-      <p class="s">何から始めればいいか、一緒に見つけます。</p>
-      <a class="btn line" href="https://lin.ee/S6B7yic">LINEで無料体験を受け取る</a>
+      <p class="s">あなたの生活スタイルに合う痩せ方を、一緒に見つけます。</p>
+      <a class="btn-line" href="https://lin.ee/S6B7yic">3日間無料体験をはじめる</a>
       <div class="step">
-        <b>① 公式LINEを追加</b>　→　<b>② 「体験」と送る</b>
+        <b>① 公式LINEを追加</b>　→　<b>② 「参加」と送る</b><br>
+        → 3日間の体験がはじまります。
       </div>
+      <p class="note">自動課金なし・しつこい勧誘なし・いつでもブロックでやめられます</p>
+    </div>
+    <div class="ps-block">
+      <strong>P.S.</strong><br>
+      体型カバーの服で隠しているのは、体型だけじゃない。あなたの「キレイになりたい気持ち」です。一緒に、あなたの自信を取り戻しましょう。
     </div>
   </div>
 </section>
 
 <footer>
   <p>痩せ舌設計士ちせ</p>
-  <p style="margin-top:8px;">
+  <p>
     <a href="#">プライバシーポリシー</a>　/　<a href="#">特定商取引法に基づく表記</a>
   </p>
 </footer>
